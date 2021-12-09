@@ -1,0 +1,18 @@
+Sort String Array  with  Selection Sort
+
+let minStr = arr[i];
+  for(let j=i+1; j<arr.length;j++){
+  	if((arr[j]).localeCompare(minStr) === -1){
+    	 minStr = arr[j];
+       min_index = j;
+    }
+  }
+   if (min_index != i)
+            {
+                let temp = arr[min_index];
+                arr[min_index] = arr[i];
+                arr[i] = temp;
+            }
+}
+
+console.log(arr);
